@@ -35,6 +35,7 @@
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.user_b = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,10 +64,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(255, 150);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 30);
+            this.textBox1.Size = new System.Drawing.Size(300, 31);
             this.textBox1.TabIndex = 2;
             // 
             // metroButton1
@@ -96,16 +97,27 @@
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(255, 216);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 30);
+            this.textBox2.Size = new System.Drawing.Size(300, 31);
             this.textBox2.TabIndex = 5;
+            // 
+            // user_b
+            // 
+            this.user_b.Location = new System.Drawing.Point(17, 15);
+            this.user_b.Name = "user_b";
+            this.user_b.Size = new System.Drawing.Size(75, 23);
+            this.user_b.TabIndex = 6;
+            this.user_b.Text = "button1";
+            this.user_b.UseVisualStyleBackColor = true;
+            this.user_b.Click += new System.EventHandler(this.user_b_Click);
             // 
             // userLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.user_b);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.metroButton1);
@@ -128,5 +140,6 @@
         private MetroFramework.Controls.MetroButton metroButton1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button user_b;
     }
 }
